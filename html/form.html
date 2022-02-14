@@ -7,22 +7,109 @@
     <title>Form</title>
   </head>
   <body>
-    <form>
-      <label>First Name</label>
-      <input type="text" />
+    <!-- <form>
+      <table cellspacing="0" cellpadding="10px" width="100%">
+        <tr>
+          <td align="right"><label>First name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <td align="right"><label for="">Last Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="">Password</label></td>
+          <td><input type="password" /></td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="10px" width="100%">
+        <tr>
+          <td align="right"><label>First name</label></td>
+          <td><input type="text" /></td>
+          <td align="right"><label for="">Last Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="">Last Name</label></td>
+          <td><input type="text" /></td>
+          <td align="right"><label for="">Last Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="">Password</label></td>
+          <td><input type="password" /></td>
+          <td align="right"><label for="">Last Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
+      </table>
+    </form> -->
+
+    <hr />
+
+    <form action="table.html" method="POST" style="margin-bottom: 300px">
+      <label for="firstname">First Name</label>
+      <input type="text" name="fname" id="firstname" required value="Karan" />
       <br />
       <br />
       <label>Last Name</label>
-      <input type="text" />
+      <input type="text" name="lname" required />
       <br />
       <br />
-      <input type="submit" />
+      <label> Password </label>
+      <input type="password" name="password" />
+      <br />
+      <br />
+      <label for="">Email</label>
+      <input type="email" />
+      <br />
+      <br />
+      <label for="">Age</label>
+      <input type="number" max="24" min="18" />
+      <br />
+      <br />
+      <label for="">Mobile Number</label>
+      <input type="tel" maxlength="10" minlength="10" />
+      <br />
+      <br />
+
+      <!-- input -> id 
+      label -> for  -->
+
+      <label> Gender </label>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <br />
+      <label for="">Hobbies</label>
+      <input type="checkbox" id="cricket" />
+      <label for="cricket">Cricket</label>
+      <input type="checkbox" id="football" />
+      <label for="football">Football</label>
+      <input type="checkbox" />
+      <label for="">Tennis</label>
+      <input type="checkbox" />
+      <label for="">Others</label>
+      <br />
+      <br />
+
+      <label for="selectCity">Select City</label>
+      <select id="selectCity">
+        <option>Vapi</option>
+        <option>Surat</option>
+        <option>Daman</option>
+      </select>
+
+      <br />
+      <br />
+
+      <input type="submit" value="send" />
+      <input type="reset" value="clear" />
     </form>
 
-    <pre>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Vitae exercitationem qui
-quaerat deserunt accusamus numquam consequatur alias, facere officiis aspernatur commodi, nulla repellendus voluptatibus iste enim ratione est architecto impedit!</pre
-    >
+    <!-- fname=seema&lname=patel&password=123456 -->
   </body>
 </html>
