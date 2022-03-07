@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        height: 100vh;
+        border: 4px solid black;
+        margin: 0 auto;
+        display: flex;
+        /* X axis alignment  */
+        /* space-between , center , space-around , space-evenly  , flex-start , flex-end */
+        /* justify-content: space-around; */
+        /* Y axis alignment */
+        /* default value of align items is stretch  */
+        /* center , flex-start  , flex-end , stretch  */
+        /* align-items: flex-start; */
+        /* gap: 20px; */
+        justify-content: space-around;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+      }
+
+      .bg-danger {
+        background-color: crimson;
+      }
+
+      .bg-primary {
+        background-color: darkblue;
+      }
+
+      .bg-success {
+        background-color: greenyellow;
+      }
+
+      .bg-warning {
+        background-color: yellow;
+      }
+
+      h1 {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box bg-danger">
+        <h1>Box 1</h1>
+      </div>
+
+      <div class="box bg-primary">
+        <h1>Box 2</h1>
+      </div>
+
+      <div class="box bg-success">
+        <h1>Box 3</h1>
+      </div>
+
+      <div class="box bg-warning">
+        <h1>Box 4</h1>
+      </div>
+    </div>
+  </body>
+</html>
